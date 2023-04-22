@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(143,17,5,0.5)
+}
+.header-navigation .nav-item {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255,255,255,0);
+    padding: 30px 40px;
+    font-weight: bold;
+    font-size: 32px;
+}
+.header-navigation .nav-item:hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.3);
+}
+.header-navigation .nav-item a {
+    text-decoration: none;
+    padding: 30px 40px;
+    color: inherit;
+}
+.hero-section {
+    background-image: url('https://t3.ftcdn.net/jpg/04/38/55/62/360_F_438556218_N95g0vH42Gg0KrvxVgcHnV51g8pKbWyo.webp');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-desc {
+    color: white;
+    text-align: center;
+    flex: 1;
+    font-weight: bold;
+    padding: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-title {
+    font-size: 32px;
+}
+.hero-body {
+    font-size: 72px;
+    color: #ffec78;
+}
+.hero-block {
+    background-color: #1a94a3;
+    border: 3px solid #0d4e4a;
+    border-radius: 20px;
+    padding: 20px 25px;
+}
+.info-body {
+    font-size: 20px;
+    margin-top: 1.5em;
+}
+
+#reviews .review-block {
+    margin-top: 2em;
+}
+
+#reviews .review-style {
+    margin-top: 2em;
+}

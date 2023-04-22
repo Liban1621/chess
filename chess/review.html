@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Themed Website - Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2;
+        }
+        .header-navigation {
+            display: flex;
+            justify-content: space-around;
+            padding: 1em;
+            background-color: #8B4513;
+        }
+        .nav-item a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .nav-item a:hover {
+            text-decoration: underline;
+            color: #FFD700;
+        }
+        .card {
+            background-color: #F5DEB3;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 1em;
+            padding: 1em;
+        }
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            color: #000000;
+        }
+        .date {
+            font-size: 0.8em;
+            color: #888888;
+            margin-bottom: 0.5em;
+        }
+        .rating {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+            color: #333333;
+        }
+        .review-text {
+            font-size: 1em;
+            line-height: 1.2;
+            color: #333333;
+        }
+        input[type="submit"] {
+            background-color: #333333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4d4d4d;
+        }
+  
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0.5em;
+            padding: 1em;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+
+        <!-- Header and Body Sections -->
+        <div class="hero-section">
+            <div class="header-navigation">
+                <div class="nav-item">
+                    <li><a href="index.html">Home</a></li>
+                </div>
+                <div class="nav-item">
+                    <li><a href="info.html">Info</a></li>
+                </div>
+                <div class="nav-item">
+                    <li><a href="review.html">Reviews</a></li>
+                </div>
+                <div class="nav-item">
+                    <li><a href="about.html">About</a></li>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="reviews-section">
+            <h2>Reviews</h2>
+            <div id="reviews"></div>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">-- Select a rating --</option>
+                        <option value="1">1 star</option>
+                        <option value="2">2 stars</option>
+                        <option value="3">3 stars</option>
+                        <option value="4">4 stars</option>
+                        <option value="5">5 stars</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="review">Review:</label>
+                    <textarea id="review" name="review" rows="4" cols="50" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Create">
+                </div>
+                </form>
+                </div>
+                </div>
+                
+                <script src="data.js"></script>
+                <script src="script.js"></script>
+                </body>
+                </html>
+                
